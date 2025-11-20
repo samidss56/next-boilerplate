@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Boilerplate
 
-## Getting Started
+This project is a customized Next.js boilerplate built with the following stack:
 
-First, run the development server:
+* **Next.js** (App Router)
+* **TypeScript**
+* **Tailwind CSS**
+* **shadcn/ui** component system
+* **pnpm** as the package manager
+* **Husky** + **lint-staged** for pre-commit formatting and linting
+
+---
+
+## 🚀 Getting Started
+
+Install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run the development server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open **[http://localhost:3000](http://localhost:3000)** in your browser to view the application.
 
-## Learn More
+You can start editing the UI by modifying files under the `app/` directory. The project supports hot-reloading out of the box.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧩 Tech Stack Details
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### **Next.js**
 
-## Deploy on Vercel
+Modern React framework with server components support, file-based routing, and many optimizations by default.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### **Tailwind CSS**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Utility-first CSS framework. Tailwind CSS v4 uses a zero‑config setup by default with on-demand class scanning — no `tailwind.config.ts` file needed unless you opt into customization.
+
+### **shadcn/ui**
+
+A beautifully designed component library built on Radix UI + Tailwind. Components can be generated and extended locally.
+
+### **pnpm**
+
+Fast, disk-efficient package manager.
+
+---
+
+## 🛠️ Development Tools
+
+### **Code Quality & Git Hooks**
+
+* **ESLint** for linting
+* **Prettier** for formatting
+* **Husky** pre‑commit hooks
+* **lint-staged** to run linters only on staged files
+
+Pre-commit actions include automatic formatting and lint fixing.
+
+---
+
+## 📁 Project Structure
+
+```
+.
+├── app/              # App Router pages & layouts
+├── components/       # Reusable UI components (shadcn)
+├── lib/              # Utilities & helper functions
+├── styles/           # Global styles
+├── public/           # Static assets
+└── ...
+```
+
+---
+
+## 📘 Useful Commands
+
+| Command      | Description              |
+| ------------ | ------------------------ |
+| `pnpm dev`   | Start development server |
+| `pnpm build` | Build for production     |
+| `pnpm start` | Start production build   |
+| `pnpm lint`  | Run ESLint               |
+
+---
+
+## 📦 Deployment
+
+You can deploy this project on **Vercel**, the recommended platform for Next.js:
+
+[https://vercel.com/new](https://vercel.com/new)
+
+For more details, see Next.js deployment docs.
+
+---
+
+## 📚 Learn More
+
+Here are some useful resources:
+
+* Next.js Documentation — [https://nextjs.org/docs](https://nextjs.org/docs)
+* Tailwind Docs — [https://tailwindcss.com/docs](https://tailwindcss.com/docs)
+* shadcn/ui — [https://ui.shadcn.com](https://ui.shadcn.com)
+* pnpm — [https://pnpm.io](https://pnpm.io)
